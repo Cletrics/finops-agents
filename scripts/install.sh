@@ -7,11 +7,14 @@
 #
 # Tools:
 #   claude-code  -- Copy agents to ~/.claude/agents/cletrics-finops/
+#   codex        -- Copy agents to ~/.codex/agents/cletrics-finops/ (OpenAI Codex CLI)
+#   gemini-cli   -- Copy agents as skills to ~/.gemini/skills/cletrics-finops/
 #   copilot      -- Copy agents to ~/.github/agents/ and ~/.copilot/agents/
 #   cursor       -- Copy rules to .cursor/rules/ in current directory
 #   windsurf     -- Copy .windsurfrules to current directory
 #   opencode     -- Copy agents to .opencode/agents/ in current directory
 #   aider        -- Copy CONVENTIONS-finops.md to current directory
+#   chatgpt      -- Print bundle path for Custom GPT / Project upload
 #   all          -- Install for all detected tools (default)
 #
 # This script only performs local file copies. No network, no sudo, no eval.
@@ -33,7 +36,7 @@ dim()  { printf "${C_DIM}%s${C_RESET}\n" "$*"; }
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
-ALL_TOOLS=(claude-code copilot cursor windsurf opencode aider)
+ALL_TOOLS=(claude-code codex gemini-cli copilot cursor windsurf opencode aider chatgpt)
 
 AGENT_DIRS=(
   cloud-cost commitments kubernetes data-platforms governance waste-detection specialized
@@ -42,20 +45,26 @@ AGENT_DIRS=(
 usage() { sed -n '3,16p' "$0" | sed 's/^# \{0,1\}//'; exit 0; }
 
 detect_claude_code() { [[ -d "${HOME}/.claude" ]]; }
+detect_codex()       { command -v codex >/dev/null 2>&1 || [[ -d "${HOME}/.codex" ]]; }
+detect_gemini_cli()  { command -v gemini >/dev/null 2>&1 || [[ -d "${HOME}/.gemini" ]]; }
 detect_copilot()     { command -v code >/dev/null 2>&1 || [[ -d "${HOME}/.github" || -d "${HOME}/.copilot" ]]; }
 detect_cursor()      { command -v cursor >/dev/null 2>&1 || [[ -d "${HOME}/.cursor" ]]; }
 detect_windsurf()    { command -v windsurf >/dev/null 2>&1 || [[ -d "${HOME}/.codeium" ]]; }
 detect_opencode()    { command -v opencode >/dev/null 2>&1 || [[ -d "${HOME}/.config/opencode" ]]; }
 detect_aider()       { command -v aider >/dev/null 2>&1; }
+detect_chatgpt()     { return 1; }  # web-only: never auto-selected, must pass --tool chatgpt
 
 is_detected() {
   case "$1" in
     claude-code) detect_claude_code ;;
+    codex)       detect_codex       ;;
+    gemini-cli)  detect_gemini_cli  ;;
     copilot)     detect_copilot     ;;
     cursor)      detect_cursor      ;;
     windsurf)    detect_windsurf    ;;
     opencode)    detect_opencode    ;;
     aider)       detect_aider       ;;
+    chatgpt)     detect_chatgpt     ;;
     *)           return 1 ;;
   esac
 }
@@ -77,6 +86,48 @@ install_claude_code() {
     done < <(find "$REPO_ROOT/$dir" -name "*.md" -type f -not -name "README.md" -print0)
   done
   ok "Claude Code: $count agents -> $dest"
+}
+
+install_codex() {
+  local dest="${HOME}/.codex/agents/cletrics-finops"
+  local count=0
+  mkdir -p "$dest"
+  local dir f first_line
+  for dir in "${AGENT_DIRS[@]}"; do
+    [[ -d "$REPO_ROOT/$dir" ]] || continue
+    while IFS= read -r -d '' f; do
+      first_line="$(head -1 "$f")"
+      [[ "$first_line" == "---" ]] || continue
+      cp "$f" "$dest/"
+      (( count++ )) || true
+    done < <(find "$REPO_ROOT/$dir" -name "*.md" -type f -not -name "README.md" -print0)
+  done
+  ok "Codex CLI: $count agents -> $dest"
+}
+
+install_gemini_cli() {
+  local src="$REPO_ROOT/integrations/gemini-cli/skills"
+  local dest="${HOME}/.gemini/skills/cletrics-finops"
+  [[ -d "$src" ]] || { err "integrations/gemini-cli missing. Run ./scripts/convert.sh first."; return 1; }
+  mkdir -p "$dest"
+  local d count=0
+  while IFS= read -r -d '' d; do
+    cp -r "$d" "$dest/"
+    (( count++ )) || true
+  done < <(find "$src" -maxdepth 1 -mindepth 1 -type d -print0)
+  ok "Gemini CLI: $count skills -> $dest"
+}
+
+install_chatgpt() {
+  local bundle="$REPO_ROOT/integrations/chatgpt/cletrics-finops-bundle.md"
+  local knowledge_dir="$REPO_ROOT/integrations/chatgpt/knowledge"
+  [[ -f "$bundle" ]] || { err "integrations/chatgpt missing. Run ./scripts/convert.sh first."; return 1; }
+  ok "ChatGPT bundle ready:"
+  dim "  Paste into Custom GPT / Project instructions:"
+  dim "    $bundle"
+  dim "  Or upload knowledge files (one per agent):"
+  dim "    $knowledge_dir/"
+  dim "  See integrations/chatgpt/README.md for full setup."
 }
 
 install_copilot() {
@@ -153,11 +204,14 @@ install_aider() {
 install_tool() {
   case "$1" in
     claude-code) install_claude_code ;;
+    codex)       install_codex       ;;
+    gemini-cli)  install_gemini_cli  ;;
     copilot)     install_copilot     ;;
     cursor)      install_cursor      ;;
     windsurf)    install_windsurf    ;;
     opencode)    install_opencode    ;;
     aider)       install_aider       ;;
+    chatgpt)     install_chatgpt     ;;
   esac
 }
 

@@ -2,8 +2,9 @@
 
 **The open-source reference library for cloud cost operations.** A curated set
 of specialist AI agent personas and named-pattern playbooks that drop into
-any modern coding assistant -- Claude Code, GitHub Copilot, Cursor, Windsurf,
-Aider, OpenCode, and Gemini CLI.
+any modern coding assistant -- Claude Code, OpenAI Codex CLI, Gemini CLI,
+GitHub Copilot, Cursor, Windsurf, Aider, and OpenCode -- plus ChatGPT Custom
+GPTs, Claude Projects, and Gemini Gems on the web.
 
 Built by [Cletrics](https://realtimecost.com) and the FinOps community.
 MIT-licensed. Vendor-neutral where possible. Contributions welcome.
@@ -37,12 +38,21 @@ cd finops-agents
 
 # Or pick one
 ./scripts/install.sh --tool claude-code
+./scripts/install.sh --tool codex         # OpenAI Codex CLI
+./scripts/install.sh --tool gemini-cli    # Gemini CLI (skill format)
+./scripts/install.sh --tool copilot
 ./scripts/install.sh --tool cursor
 ./scripts/install.sh --tool windsurf
-./scripts/install.sh --tool copilot
-./scripts/install.sh --tool opencode
 ./scripts/install.sh --tool aider
+./scripts/install.sh --tool opencode
+./scripts/install.sh --tool chatgpt       # prints Custom GPT / Projects bundle path
 ```
+
+### Web-only surfaces (no CLI required)
+
+ChatGPT Custom GPTs, Claude Projects, and Gemini Gems can load the agents
+directly. See [`integrations/chatgpt/README.md`](./integrations/chatgpt/README.md)
+for setup instructions for each.
 
 The installer only does local file copies into your tool's standard config
 directory. No network calls, no sudo, no elevated privileges.

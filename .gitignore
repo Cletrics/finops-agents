@@ -20,11 +20,6 @@ scratch/
 TODO.md
 NOTES.md
 
-# Generated integration files -- run scripts/convert.sh to regenerate locally
-integrations/claude-code/
-integrations/cursor/
-integrations/copilot/
-integrations/windsurf/
-integrations/aider/
-integrations/opencode/
-integrations/gemini-cli/
+# Integration files are pre-generated and committed so users can clone + install
+# without running the converter. Contributors regenerate with scripts/convert.sh
+# after adding or modifying agents.
