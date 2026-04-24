@@ -1,0 +1,43 @@
+name: Lint Agent Files
+
+on:
+  pull_request:
+    paths:
+      - "cloud-cost/**"
+      - "commitments/**"
+      - "kubernetes/**"
+      - "data-platforms/**"
+      - "governance/**"
+      - "waste-detection/**"
+      - "specialized/**"
+      - "playbooks/**"
+
+jobs:
+  lint:
+    name: Validate agent frontmatter and structure
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed
+        run: |
+          FILES=$(git diff --name-only --diff-filter=ACMR origin/${{ github.base_ref }}...HEAD -- \
+            'cloud-cost/**/*.md' 'commitments/**/*.md' 'kubernetes/**/*.md' \
+            'data-platforms/**/*.md' 'governance/**/*.md' 'waste-detection/**/*.md' \
+            'specialized/**/*.md' 'playbooks/**/*.md')
+          {
+            echo "files<<ENDOFLIST"
+            echo "$FILES"
+            echo "ENDOFLIST"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Run linter
+        if: steps.changed.outputs.files != ''
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.files }}
+        run: |
+          chmod +x scripts/lint-agents.sh
+          ./scripts/lint-agents.sh $CHANGED_FILES

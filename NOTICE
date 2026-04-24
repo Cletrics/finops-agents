@@ -1,0 +1,37 @@
+Cletrics FinOps Agents
+Copyright 2026 Cletrics and Cletrics FinOps Agents Contributors
+
+This product is licensed under the MIT License (see LICENSE).
+
+"Cletrics" and the Cletrics logo are trademarks of Cletrics.
+Use of the Cletrics name or logo to describe your own fork, derivative
+product, or service is not permitted without written consent.
+
+You may:
+  - Use, modify, redistribute, and sublicense the agent and playbook
+    markdown content freely under the terms of the MIT License.
+  - Reference "Cletrics FinOps Agents" as the upstream source by name.
+
+You may not:
+  - Use the Cletrics name, logo, or brand in the name of your own fork
+    or derivative product in a way that implies endorsement.
+  - Remove the copyright notice or this NOTICE file when redistributing
+    the repository in whole or in substantial part.
+
+For commercial use of the Cletrics brand, contact legal@cletrics.com.
+
+---
+
+Trademark attribution for third parties:
+  - AWS, Amazon Web Services, and related service names are trademarks
+    of Amazon.com, Inc. or its affiliates.
+  - Google Cloud, GCP, BigQuery, and related service names are trademarks
+    of Google LLC.
+  - Microsoft, Azure, and related service names are trademarks of the
+    Microsoft group of companies.
+  - FinOps Foundation and FOCUS are trademarks of the FinOps Foundation.
+  - Kubernetes is a trademark of the Linux Foundation.
+  - Other trademarks are property of their respective owners.
+
+Use of these third-party names in this repository is descriptive and
+nominative, not endorsed or sponsored by the respective trademark holders.

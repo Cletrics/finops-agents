@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+._*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+.cache/
+
+# Scratch
+scratch/
+TODO.md
+NOTES.md
+
+# Generated integration files -- run scripts/convert.sh to regenerate locally
+integrations/claude-code/
+integrations/cursor/
+integrations/copilot/
+integrations/windsurf/
+integrations/aider/
+integrations/opencode/
+integrations/gemini-cli/

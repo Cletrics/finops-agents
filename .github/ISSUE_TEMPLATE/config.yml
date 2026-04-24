@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security issue
+    url: https://github.com/cletrics/finops-agents/security/policy
+    about: Please report security issues privately per SECURITY.md, not in public issues.
+  - name: Question or discussion
+    url: https://github.com/cletrics/finops-agents/discussions
+    about: For open-ended questions, design discussion, or roadmap input.
