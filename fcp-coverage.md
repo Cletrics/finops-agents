@@ -12,10 +12,10 @@ Source: FCP course Lesson 7 -- 4 Domains, 18 canonical Capabilities.
 
 ## Quantify Business Value
 
-- [ ] **Planning & Estimating** -- (no agent)
+- [x] **Planning & Estimating** -- Cloud Workload Cost Estimator
 - [x] **Forecasting** -- Forecast Model Builder
 - [x] **Budgeting** -- Budget Alert Tuner
-- [ ] **Benchmarking** -- (no agent)
+- [x] **Benchmarking** -- FinOps Benchmarking Analyst
 - [x] **Unit Economics** -- Unit Economics Modeler
 
 ## Optimize Usage & Cost
@@ -23,33 +23,21 @@ Source: FCP course Lesson 7 -- 4 Domains, 18 canonical Capabilities.
 - [x] **Architecting for Cloud** -- SRE SLO/Cost Tradeoff Analyst; Cross-AZ Egress Investigator; Serverless Cost Profiler
 - [x] **Rate Optimization** -- AWS Savings Plans Strategist; Azure Reservation Planner; AWS Reserved Instance Optimizer; EDP Negotiation Coach; GCP CUD Optimizer; Spot Orchestrator
 - [x] **Workload Optimization** -- Container Rightsizer; Cluster Autoscaler Tuner; Orphaned Load Balancer Hunter; Idle Resource Hunter; S3 Storage Class Auditor; Zombie NAT Gateway Detector; EBS Snapshot Gardener; ML Workload Cost Optimizer
-- [ ] **Cloud Sustainability** -- (no agent)
-- [ ] **Licensing & SaaS** -- (no agent)
+- [x] **Cloud Sustainability** -- Cloud Sustainability Analyst
+- [x] **Licensing & SaaS** -- License & SaaS Cost Optimizer
 
 ## Manage the FinOps Practice
 
 - [x] **FinOps Practice Operations** -- FinOps Governance Lead; Platform Team Cost Lead
-- [ ] **Policy & Governance** -- (no agent)
+- [x] **Policy & Governance** -- FinOps Policy Architect
 - [x] **FinOps Assessment** -- FinOps Practice Maturity Assessor
-- [ ] **FinOps Tools & Services** -- (no agent)
-- [ ] **FinOps Education & Enablement** -- (no agent)
+- [x] **FinOps Tools & Services** -- FinOps Tooling Evaluator
+- [x] **FinOps Education & Enablement** -- FinOps Enablement Lead
 - [x] **Invoicing & Chargeback** -- Showback / Chargeback Architect
-- [ ] **Onboarding Workloads** -- (no agent)
-- [ ] **Intersecting Disciplines** -- (no agent)
+- [x] **Onboarding Workloads** -- Cloud Onboarding Coordinator
+- [x] **Intersecting Disciplines** -- FinOps Intersections Coordinator
 
 ---
 
-**Coverage: 13 / 22 Framework Capabilities** (59%)
-
-## Roadmap candidates (uncovered Capabilities)
-
-- Quantify Business Value: **Planning & Estimating**
-- Quantify Business Value: **Benchmarking**
-- Optimize Usage & Cost: **Cloud Sustainability**
-- Optimize Usage & Cost: **Licensing & SaaS**
-- Manage the FinOps Practice: **Policy & Governance**
-- Manage the FinOps Practice: **FinOps Tools & Services**
-- Manage the FinOps Practice: **FinOps Education & Enablement**
-- Manage the FinOps Practice: **Onboarding Workloads**
-- Manage the FinOps Practice: **Intersecting Disciplines**
+**Coverage: 22 / 22 Framework Capabilities** (100%)
 

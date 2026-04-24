@@ -9,12 +9,12 @@ GPTs, Claude Projects, and Gemini Gems on the web.
 Built by [Cletrics](https://realtimecost.com) and the FinOps community.
 MIT-licensed. Vendor-neutral where possible. Contributions welcome.
 
-**Framework-aligned.** Every agent carries explicit
-[FinOps Framework](https://www.finops.org/framework/) metadata
-(Domain, Capability, Phase, Personas, Maturity entry point). Current
-coverage: **13 of 22** canonical FCP Framework Capabilities. See
-[`fcp-coverage.md`](./fcp-coverage.md) for the live matrix and roadmap
-gaps, or run `./scripts/fcp-coverage.sh`.
+**Framework-aligned. 22 of 22 Capabilities covered (100%).** Every
+agent carries explicit
+[FinOps Framework](https://www.finops.org/framework/) metadata -- Domain,
+Capability, Phase, Personas, Maturity entry point. See
+[`fcp-coverage.md`](./fcp-coverage.md) for the live matrix, or run
+`./scripts/fcp-coverage.sh`.
 
 ---
 
@@ -66,9 +66,9 @@ directory. No network calls, no sudo, no elevated privileges.
 
 ---
 
-## Agent roster (34 agents, 7 categories)
+## Agent roster (43 agents, 7 categories)
 
-### `cloud-cost/` -- 7 agents
+### `cloud-cost/` -- 10 agents
 Day-to-day cloud cost analysis across AWS, GCP, and Azure.
 
 - **AWS Cost Explorer Analyst** -- CUR 2.0, Cost Categories, line-item narratives
@@ -77,6 +77,8 @@ Day-to-day cloud cost analysis across AWS, GCP, and Azure.
 - **Multi-Cloud Cost Comparator** -- unified FOCUS dataset across clouds
 - **Cost Anomaly Detector** -- seasonal-aware detection that doesn't fire on Mondays
 - **Forecast Model Builder** -- driver-based forecasts tied to business drivers
+- **Cloud Workload Cost Estimator** -- pre-deployment modeling with sensitivity ranges
+- **FinOps Benchmarking Analyst** -- KPI selection + internal + external comparison
 - **Unit Economics Modeler** -- cost per tenant, per request, per GB
 - **Budget Alert Tuner** -- fewer, sharper alerts teams actually action
 
@@ -103,8 +105,9 @@ The pipelines and models behind every cost dashboard.
 - **Billing Data Pipeline Architect** -- batch vs streaming, engine choice
 - **Cost Warehouse Modeler** -- dimensional models, dbt, semantic layer
 
-### `governance/` -- 6 agents
-Practice operations: showback, chargeback, tagging, maturity.
+### `governance/` -- 11 agents
+Practice operations: showback, chargeback, tagging, maturity, policy,
+tooling, enablement, migration, and cross-discipline coordination.
 
 - **Showback / Chargeback Architect**
 - **Tag Hygiene Enforcer**
@@ -112,6 +115,11 @@ Practice operations: showback, chargeback, tagging, maturity.
 - **FinOps Practice Maturity Assessor**
 - **Platform Team Cost Lead**
 - **SRE SLO/Cost Tradeoff Analyst**
+- **FinOps Policy Architect** -- SCPs, Azure Policy, OPA, admission controllers
+- **FinOps Tooling Evaluator** -- build-vs-buy, vendor selection, portfolio hygiene
+- **FinOps Enablement Lead** -- training, Champions program, onboarding integration
+- **Cloud Onboarding Coordinator** -- migration-time cost hygiene + intake gate
+- **FinOps Intersections Coordinator** -- ITAM / ITSM / ITFM / Security / Sustainability liaison
 
 ### `waste-detection/` -- 5 agents
 The hunters.
@@ -123,12 +131,14 @@ The hunters.
 - **Cross-AZ Egress Investigator**
 - **Orphaned Load Balancer Hunter**
 
-### `specialized/` -- 3 agents
+### `specialized/` -- 5 agents
 Higher-leverage niches.
 
 - **ML Workload Cost Optimizer** (training / inference)
 - **Serverless Cost Profiler**
 - **Spot Orchestrator**
+- **Cloud Sustainability Analyst** -- carbon accounting, region-carbon trade-offs
+- **License & SaaS Cost Optimizer** -- BYOL, marketplace, entitlement audits
 
 ---
 
