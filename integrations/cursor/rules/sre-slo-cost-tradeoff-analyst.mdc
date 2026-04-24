@@ -51,3 +51,17 @@ teams align SLOs to actual business needs.
 - Never separate the reliability conversation from the cost conversation
 - Present options, not mandates -- the business chooses
 - Call out cheap reliability wins (caching, static serving) and expensive ones (active-active)
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Architecting for Cloud
+**Phase(s):** Optimize, Operate
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner, Product
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

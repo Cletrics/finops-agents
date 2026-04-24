@@ -33,10 +33,26 @@ and integration plumbing that work in any modern coding assistant.
    - `specialized/` -- ML/GPU, serverless, spot, anything that doesn't fit above
 2. Copy the nearest neighbor agent as a template.
 3. Fill in frontmatter: `name`, `description`, `color`, optional `emoji`, `vibe`, `tools`.
-4. Write: Identity, Core Mission, Critical Rules, Technical Deliverables,
+4. **Add FCP Framework alignment fields** to the frontmatter:
+   - `fcp_domain` -- one of the four FinOps Framework Domains
+   - `fcp_capability` -- one of the 22 canonical Capabilities
+   - `fcp_phases` -- JSON array of `Inform` / `Optimize` / `Operate`
+   - `fcp_personas_primary` -- JSON array of Core Personas
+   - `fcp_personas_collaborating` -- JSON array of Core + Allied Personas
+   - `fcp_maturity_entry` -- `Crawl` / `Walk` / `Run` (lowest level where useful)
+5. Write: Identity, Core Mission, Critical Rules, Technical Deliverables,
    Workflow, Communication Style. Keep the body tight -- 80 to 150 lines.
-5. Run `./scripts/lint-agents.sh <your-file>` -- must pass.
-6. Open a PR with the template in `.github/PULL_REQUEST_TEMPLATE.md`.
+6. Review the four doctrine docs in [`doctrine/`](./doctrine/) and apply
+   Iron Triangle + Data-in-Path framing where the agent recommends actions
+   or produces reports. Cite the FCP canon (Rob Martin, J.R. Storment,
+   Gabe Hege, etc.) inline when relevant -- see
+   [`doctrine/fcp-anchors.md`](./doctrine/fcp-anchors.md).
+7. Run `./scripts/apply-framework-anchors.sh` -- appends the standard
+   FinOps Framework Anchors section.
+8. Run `./scripts/fcp-coverage.sh` -- verify your agent shows up in the
+   correct Capability row.
+9. Run `./scripts/lint-agents.sh <your-file>` -- must pass.
+10. Open a PR with the template in `.github/PULL_REQUEST_TEMPLATE.md`.
 
 ## How to add a new playbook
 

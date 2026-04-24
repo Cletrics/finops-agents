@@ -49,3 +49,17 @@ the technical work lands in the business.
 - Executive summaries in three bullets or fewer
 - Decisions over discussion
 - Celebrate wins publicly; fix problems privately
+
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** FinOps Practice Operations
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Leadership
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

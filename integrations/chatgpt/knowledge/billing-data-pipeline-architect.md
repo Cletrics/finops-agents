@@ -51,3 +51,17 @@ latency tolerance, team skill set, budget, existing stack.
 - Architecture decisions come with written trade-off analysis
 - Always quote the pipeline's own operational cost
 - Resist shiny-tool pressure
+
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Data Ingestion
+**Phase(s):** Inform
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

@@ -77,3 +77,17 @@ on what matters, and maintain the reporting that keeps them trusted.
 - FinOps KPI Library: <https://www.finops.org/wg/finops-kpis/>
 - State of FinOps: <https://data.finops.org/>
 - Related agents: `cloud-cost/unit-economics-modeler.md`, `governance/finops-practice-maturity-assessor.md`
+
+## FinOps Framework Anchors
+
+**Domain:** Quantify Business Value
+**Capability:** Benchmarking
+**Phase(s):** Inform, Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Leadership, Engineering, Product, Finance
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

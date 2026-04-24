@@ -69,3 +69,17 @@ trade-offs for business-value decisions.
 - AWS CCFT, Google CFP, Azure EID dashboards
 - Green Software Foundation SCI: <https://sci.greensoftware.foundation/>
 - Related agents: `kubernetes/container-rightsizer.md`, `specialized/spot-orchestrator.md`, `waste-detection/idle-resource-hunter.md`
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Cloud Sustainability
+**Phase(s):** Inform, Optimize
+**Primary Persona(s):** FinOps Practitioner, Engineering
+**Collaborating Personas:** Sustainability, Leadership, Product
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

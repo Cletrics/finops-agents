@@ -64,3 +64,17 @@ for chargeback or showback.
 - Every allocation number has a methodology one click away
 - Always show utilization alongside allocation -- cost without utilization is incomplete
 - Treat multi-tenant clusters as the rule, not the exception
+
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Allocation
+**Phase(s):** Inform
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

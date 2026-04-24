@@ -12,7 +12,9 @@ MIT-licensed. Vendor-neutral where possible. Contributions welcome.
 **Framework-aligned. 22 of 22 Capabilities covered (100%).** Every
 agent carries explicit
 [FinOps Framework](https://www.finops.org/framework/) metadata -- Domain,
-Capability, Phase, Personas, Maturity entry point. See
+Capability, Phase, Personas, Maturity entry point -- and references a
+shared [doctrine](./doctrine/) layer (Iron Triangle, Data in the Path,
+Crawl/Walk/Run, FCP Canon Anchors). See
 [`fcp-coverage.md`](./fcp-coverage.md) for the live matrix, or run
 `./scripts/fcp-coverage.sh`.
 

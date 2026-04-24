@@ -50,3 +50,17 @@ migrate cold data to cheaper classes where access patterns allow.
 - Lead with $/month opportunity per bucket
 - Always factor retrieval cost into Glacier recommendations
 - Flag versioning + no-lifecycle combos as urgent
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Workload Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

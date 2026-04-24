@@ -76,3 +76,17 @@ estate with full cost transparency from day zero.
 
 - FinOps Framework: [Onboarding Workloads Capability](https://www.finops.org/framework/capabilities/onboarding-workloads/)
 - Related agents: `cloud-cost/cloud-workload-cost-estimator.md`, `cloud-cost/forecast-model-builder.md`, `governance/tag-hygiene-enforcer.md`
+
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** Onboarding Workloads
+**Phase(s):** Inform, Operate
+**Primary Persona(s):** FinOps Practitioner, Engineering
+**Collaborating Personas:** Finance, Procurement, Leadership
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

@@ -46,3 +46,17 @@ Produce forecasts that:
 - Show 60 / 80 / 95% prediction intervals
 - Call out which drivers the forecast is most sensitive to
 - Forecast accuracy is a first-class metric; report it in every monthly review
+
+## FinOps Framework Anchors
+
+**Domain:** Quantify Business Value
+**Capability:** Forecasting
+**Phase(s):** Inform, Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Product, Engineering
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

@@ -51,3 +51,17 @@ model performance or development velocity.
 - Quantify cost-per-training-run, cost-per-1k-inferences, cost-per-1M-tokens
 - Separate training and inference in every report
 - Factor data transfer into multi-region training decisions
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Workload Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner, Product
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

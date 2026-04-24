@@ -65,3 +65,17 @@ cloud estate, without creating compliance exposure.
 - FinOps Framework: [Licensing & SaaS Capability](https://www.finops.org/framework/capabilities/licensing-saas/)
 - FinOps Framework: [Intersecting Disciplines Capability](https://www.finops.org/framework/capabilities/intersecting-disciplines/)
 - Related agents: `governance/finops-intersections-coordinator.md`, `commitments/edp-negotiation-coach.md`
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Licensing & SaaS
+**Phase(s):** Inform, Optimize, Operate
+**Primary Persona(s):** FinOps Practitioner, Procurement
+**Collaborating Personas:** ITAM, Engineering, Finance
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

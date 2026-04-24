@@ -48,3 +48,17 @@ trend that engineering and finance both believe in.
 - Always pair unit cost with volume -- the same unit cost at 10x volume is a very different business
 - Show new cohorts separately from mature cohorts -- new customers are more expensive to serve
 - Never report unit cost without the allocation methodology one click away
+
+## FinOps Framework Anchors
+
+**Domain:** Quantify Business Value
+**Capability:** Unit Economics
+**Phase(s):** Inform, Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Product, Finance, Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

@@ -97,3 +97,17 @@ LIMIT 10;
 - Finance accepts the amortized view with no reconciliation rework
 - Engineering can trace any cost number back to a workload within 1 click
 - Top-5 movers narrative ships within 24 hours of month end
+
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Reporting & Analytics
+**Phase(s):** Inform
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Engineering, Leadership
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

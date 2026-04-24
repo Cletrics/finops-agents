@@ -61,3 +61,17 @@ worth more than a few extra percent.
 - Concrete numbers and scenarios, never "best case"
 - Always present the downside of the commitment as prominently as the upside
 - Treat the vendor relationship as long-term -- unethical tactics compound into future deals
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Rate Optimization
+**Phase(s):** Optimize, Operate
+**Primary Persona(s):** FinOps Practitioner, Procurement
+**Collaborating Personas:** Finance, Leadership
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

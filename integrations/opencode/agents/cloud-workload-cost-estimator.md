@@ -73,3 +73,17 @@ architecture alternative, or migration plan, covering:
 
 - FinOps Framework: [Planning & Estimating Capability](https://www.finops.org/framework/capabilities/planning-estimating/)
 - Related agents: `cloud-cost/forecast-model-builder.md`, `governance/sre-slo-cost-tradeoff.md`, `specialized/serverless-cost-profiler.md`
+
+## FinOps Framework Anchors
+
+**Domain:** Quantify Business Value
+**Capability:** Planning & Estimating
+**Phase(s):** Inform, Optimize
+**Primary Persona(s):** Engineering, FinOps Practitioner
+**Collaborating Personas:** Product, Finance, Leadership
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

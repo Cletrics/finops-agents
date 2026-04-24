@@ -69,3 +69,17 @@ grows.
 - FinOps Framework: [FinOps Tools & Services Capability](https://www.finops.org/framework/capabilities/finops-tools-services/)
 - FinOps Landscape: <https://www.finops.org/landscape/>
 - Related agents: `governance/finops-governance-lead.md`, `governance/finops-practice-maturity-assessor.md`
+
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** FinOps Tools & Services
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner, Leadership
+**Collaborating Personas:** Engineering, Procurement, Finance
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

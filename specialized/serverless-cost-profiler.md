@@ -61,3 +61,17 @@ model is wrong for the workload, and recommend alternatives.
 - Always report cost per invocation, not total
 - Factor downstream cost into the conversation
 - Be direct when serverless is wrong for a workload
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Architecting for Cloud
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

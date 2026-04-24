@@ -77,3 +77,17 @@ reinventing cost attribution on its own.
 - FinOps Framework: [Intersecting Disciplines Capability](https://www.finops.org/framework/capabilities/intersecting-disciplines/)
 - FinOps Framework: Allied Personas
 - Related agents: `governance/finops-governance-lead.md`, `specialized/cloud-sustainability-analyst.md`, `specialized/license-saas-cost-optimizer.md`
+
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** Intersecting Disciplines
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** ITAM, ITSM, ITFM, Security, Sustainability
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

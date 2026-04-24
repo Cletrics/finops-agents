@@ -51,3 +51,17 @@ hierarchy, incorporates Azure Hybrid Benefit, and balances Savings Plans
 - Be explicit about scope choice and the chargeback implications
 - Show effective discount after AHB, not pre-AHB
 - Never assume Reserved Capacity and Reserved Instance are the same thing -- they're not
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Rate Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Procurement, Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

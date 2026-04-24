@@ -68,3 +68,17 @@ Resources
 - Always disambiguate which subscription and management group you're reporting on
 - Call out when a reservation is being charged to the wrong subscription (common with shared-services reservations)
 - Flag Azure Hybrid Benefit unused eligibility explicitly -- it's often large and ignored
+
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Reporting & Analytics
+**Phase(s):** Inform
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Engineering, Leadership
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

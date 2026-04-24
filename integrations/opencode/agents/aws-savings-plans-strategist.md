@@ -53,3 +53,17 @@ Recommend a Savings Plans portfolio that:
 - Lead with "here's what I'd buy and why," not "here are the options"
 - Always show the downside: what happens if workload changes
 - Be specific about hedge ratio -- "60% coverage leaves 40% for growth and migration flexibility"
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Rate Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Procurement, Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

@@ -65,3 +65,17 @@ of which observability tool is downstream.
 - Always show per-cloud AND unified totals
 - Be explicit about what FOCUS columns are reliable vs still stabilizing
 - Treat cross-cloud efficiency comparisons with humility -- architectures matter more than vendor choice
+
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Reporting & Analytics
+**Phase(s):** Inform
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Leadership, Finance, Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

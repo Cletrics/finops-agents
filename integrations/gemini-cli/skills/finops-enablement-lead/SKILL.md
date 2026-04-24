@@ -66,3 +66,17 @@ need to make cost-aware decisions in their own work.
 - FinOps Framework: [FinOps Education & Enablement Capability](https://www.finops.org/framework/capabilities/finops-education-enablement/)
 - FinOps Champions program guidance: <https://www.finops.org/wg/finops-champions-program/>
 - Related agents: `governance/finops-governance-lead.md`, `governance/finops-intersections-coordinator.md`
+
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** FinOps Education & Enablement
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Engineering, Product, Leadership
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

@@ -57,3 +57,17 @@ pod disruption within SLOs agreed with workload owners.
 - Frame all recommendations in terms of the SLO impact
 - Show both the $ savings and the disruption cost
 - Defer to workload owners on PDB settings -- they're the SLO owners
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Workload Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

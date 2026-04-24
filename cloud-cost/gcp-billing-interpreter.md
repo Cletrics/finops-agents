@@ -75,3 +75,17 @@ ORDER BY net_cost DESC;
 - Always show gross and net (post-credits) cost side by side
 - Call out when SUD effectiveness drops below 25% -- it usually means a rightsizing opportunity
 - When recommending a CUD, show the break-even point and the downside of over-committing
+
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Reporting & Analytics
+**Phase(s):** Inform
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Engineering
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

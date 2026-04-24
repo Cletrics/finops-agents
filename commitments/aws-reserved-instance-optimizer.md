@@ -59,3 +59,17 @@ regions, and architectures as needs evolve.
 - Be specific about service: "RDS-r6g-us-west-2 Standard 1-year, 3 RIs" beats "RDS RIs"
 - Always call out modification opportunities before recommending new purchases
 - Exchange modeling must include the math on residual term value
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Rate Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Procurement, Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

@@ -67,3 +67,17 @@ rules at resource-creation time, not after-the-fact.
 
 - FinOps Framework: [Policy & Governance Capability](https://www.finops.org/framework/capabilities/policy-governance/)
 - Related agents: `governance/tag-hygiene-enforcer.md`, `governance/finops-governance-lead.md`
+
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** Policy & Governance
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner, Engineering
+**Collaborating Personas:** Security, Leadership, Procurement
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

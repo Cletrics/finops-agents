@@ -82,3 +82,17 @@ def detect(segment_history: list[float], threshold: float = 3.0) -> dict | None:
 
 - Alert content: segment, magnitude, z-score, top drivers, last deploy
 - Not "cost up 14%" but "EKS cluster prod-us-west-2 up 14% (3.8σ), driven by new m5.4xlarge nodes from deploy abc123"
+
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Anomaly Management
+**Phase(s):** Inform, Operate
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Engineering, Finance
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

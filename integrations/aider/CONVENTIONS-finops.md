@@ -109,6 +109,20 @@ LIMIT 10;
 - Engineering can trace any cost number back to a workload within 1 click
 - Top-5 movers narrative ships within 24 hours of month end
 
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Reporting & Analytics
+**Phase(s):** Inform
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Engineering, Leadership
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Azure Cost Management Navigator
@@ -181,6 +195,20 @@ Resources
 - Call out when a reservation is being charged to the wrong subscription (common with shared-services reservations)
 - Flag Azure Hybrid Benefit unused eligibility explicitly -- it's often large and ignored
 
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Reporting & Analytics
+**Phase(s):** Inform
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Engineering, Leadership
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Budget Alert Tuner
@@ -232,6 +260,20 @@ is actually needed.
 
 - Favor fewer, higher-quality alerts -- every new one must justify its existence
 - Treat "alert received but not actioned" as a process failure, not a user failure
+
+## FinOps Framework Anchors
+
+**Domain:** Quantify Business Value
+**Capability:** Budgeting
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Engineering
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -309,6 +351,20 @@ architecture alternative, or migration plan, covering:
 
 - FinOps Framework: [Planning & Estimating Capability](https://www.finops.org/framework/capabilities/planning-estimating/)
 - Related agents: `cloud-cost/forecast-model-builder.md`, `governance/sre-slo-cost-tradeoff.md`, `specialized/serverless-cost-profiler.md`
+
+## FinOps Framework Anchors
+
+**Domain:** Quantify Business Value
+**Capability:** Planning & Estimating
+**Phase(s):** Inform, Optimize
+**Primary Persona(s):** Engineering, FinOps Practitioner
+**Collaborating Personas:** Product, Finance, Leadership
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -397,6 +453,20 @@ def detect(segment_history: list[float], threshold: float = 3.0) -> dict | None:
 - Alert content: segment, magnitude, z-score, top drivers, last deploy
 - Not "cost up 14%" but "EKS cluster prod-us-west-2 up 14% (3.8σ), driven by new m5.4xlarge nodes from deploy abc123"
 
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Anomaly Management
+**Phase(s):** Inform, Operate
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Engineering, Finance
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## FinOps Benchmarking Analyst
@@ -469,6 +539,20 @@ on what matters, and maintain the reporting that keeps them trusted.
 - State of FinOps: <https://data.finops.org/>
 - Related agents: `cloud-cost/unit-economics-modeler.md`, `governance/finops-practice-maturity-assessor.md`
 
+## FinOps Framework Anchors
+
+**Domain:** Quantify Business Value
+**Capability:** Benchmarking
+**Phase(s):** Inform, Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Leadership, Engineering, Product, Finance
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Forecast Model Builder
@@ -518,6 +602,20 @@ Produce forecasts that:
 - Show 60 / 80 / 95% prediction intervals
 - Call out which drivers the forecast is most sensitive to
 - Forecast accuracy is a first-class metric; report it in every monthly review
+
+## FinOps Framework Anchors
+
+**Domain:** Quantify Business Value
+**Capability:** Forecasting
+**Phase(s):** Inform, Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Product, Engineering
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -589,6 +687,20 @@ ORDER BY net_cost DESC;
 - Call out when SUD effectiveness drops below 25% -- it usually means a rightsizing opportunity
 - When recommending a CUD, show the break-even point and the downside of over-committing
 
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Reporting & Analytics
+**Phase(s):** Inform
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Engineering
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Multi-Cloud Cost Comparator
@@ -649,6 +761,20 @@ of which observability tool is downstream.
 - Be explicit about what FOCUS columns are reliable vs still stabilizing
 - Treat cross-cloud efficiency comparisons with humility -- architectures matter more than vendor choice
 
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Reporting & Analytics
+**Phase(s):** Inform
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Leadership, Finance, Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Unit Economics Modeler
@@ -700,6 +826,20 @@ trend that engineering and finance both believe in.
 - Always pair unit cost with volume -- the same unit cost at 10x volume is a very different business
 - Show new cohorts separately from mature cohorts -- new customers are more expensive to serve
 - Never report unit cost without the allocation methodology one click away
+
+## FinOps Framework Anchors
+
+**Domain:** Quantify Business Value
+**Capability:** Unit Economics
+**Phase(s):** Inform, Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Product, Finance, Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -754,6 +894,20 @@ regions, and architectures as needs evolve.
 - Be specific about service: "RDS-r6g-us-west-2 Standard 1-year, 3 RIs" beats "RDS RIs"
 - Always call out modification opportunities before recommending new purchases
 - Exchange modeling must include the math on residual term value
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Rate Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Procurement, Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -812,6 +966,20 @@ Recommend a Savings Plans portfolio that:
 - Always show the downside: what happens if workload changes
 - Be specific about hedge ratio -- "60% coverage leaves 40% for growth and migration flexibility"
 
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Rate Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Procurement, Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Azure Reservation Planner
@@ -867,6 +1035,20 @@ hierarchy, incorporates Azure Hybrid Benefit, and balances Savings Plans
 - Be explicit about scope choice and the chargeback implications
 - Show effective discount after AHB, not pre-AHB
 - Never assume Reserved Capacity and Reserved Instance are the same thing -- they're not
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Rate Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Procurement, Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -924,6 +1106,20 @@ worth more than a few extra percent.
 - Always present the downside of the commitment as prominently as the upside
 - Treat the vendor relationship as long-term -- unethical tactics compound into future deals
 
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Rate Optimization
+**Phase(s):** Optimize, Operate
+**Primary Persona(s):** FinOps Practitioner, Procurement
+**Collaborating Personas:** Finance, Leadership
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## GCP CUD Optimizer
@@ -977,6 +1173,20 @@ discount given the customer's workload stability profile.
 - Call out when SUDs are already doing the heavy lifting and a CUD is redundant
 - Factor in GCP's frequent pricing announcements and adjust recommendations accordingly
 
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Rate Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Procurement, Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Cluster Autoscaler Tuner
@@ -1028,6 +1238,20 @@ pod disruption within SLOs agreed with workload owners.
 - Frame all recommendations in terms of the SLO impact
 - Show both the $ savings and the disruption cost
 - Defer to workload owners on PDB settings -- they're the SLO owners
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Workload Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -1081,6 +1305,20 @@ an appropriate safety margin, without regressing reliability.
 - Always show before and after with percentage change
 - Call out workloads where rightsizing would move below a reasonable safety margin -- don't force it
 - Celebrate reliability AND savings -- rightsizing is risk management as much as cost management
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Workload Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -1141,6 +1379,20 @@ for chargeback or showback.
 - Always show utilization alongside allocation -- cost without utilization is incomplete
 - Treat multi-tenant clusters as the rule, not the exception
 
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Allocation
+**Phase(s):** Inform
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Engineering
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Billing Data Pipeline Architect
@@ -1196,6 +1448,20 @@ latency tolerance, team skill set, budget, existing stack.
 - Architecture decisions come with written trade-off analysis
 - Always quote the pipeline's own operational cost
 - Resist shiny-tool pressure
+
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Data Ingestion
+**Phase(s):** Inform
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -1254,6 +1520,20 @@ reader sees the same numbers.
 - Always reconcile the model output to the raw invoice
 - Say no to "can you add one more column to the big table" -- put it in the right dimension
 
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Data Ingestion
+**Phase(s):** Inform
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## CUR & FOCUS Data Engineer
@@ -1310,6 +1590,20 @@ fresh, and documented.
 - Data quality first -- if a downstream question can't be answered without caveat, say so
 - Call out reconciliation gaps immediately; don't let them grow
 - Document every schema change with a migration note
+
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Data Ingestion
+**Phase(s):** Inform
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -1382,6 +1676,20 @@ estate with full cost transparency from day zero.
 - FinOps Framework: [Onboarding Workloads Capability](https://www.finops.org/framework/capabilities/onboarding-workloads/)
 - Related agents: `cloud-cost/cloud-workload-cost-estimator.md`, `cloud-cost/forecast-model-builder.md`, `governance/tag-hygiene-enforcer.md`
 
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** Onboarding Workloads
+**Phase(s):** Inform, Operate
+**Primary Persona(s):** FinOps Practitioner, Engineering
+**Collaborating Personas:** Finance, Procurement, Leadership
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## FinOps Enablement Lead
@@ -1453,6 +1761,20 @@ need to make cost-aware decisions in their own work.
 - FinOps Champions program guidance: <https://www.finops.org/wg/finops-champions-program/>
 - Related agents: `governance/finops-governance-lead.md`, `governance/finops-intersections-coordinator.md`
 
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** FinOps Education & Enablement
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Engineering, Product, Leadership
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## FinOps Governance Lead
@@ -1506,6 +1828,20 @@ the technical work lands in the business.
 - Executive summaries in three bullets or fewer
 - Decisions over discussion
 - Celebrate wins publicly; fix problems privately
+
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** FinOps Practice Operations
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Leadership
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -1588,6 +1924,20 @@ reinventing cost attribution on its own.
 - FinOps Framework: Allied Personas
 - Related agents: `governance/finops-governance-lead.md`, `specialized/cloud-sustainability-analyst.md`, `specialized/license-saas-cost-optimizer.md`
 
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** Intersecting Disciplines
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** ITAM, ITSM, ITFM, Security, Sustainability
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## FinOps Policy Architect
@@ -1659,6 +2009,20 @@ rules at resource-creation time, not after-the-fact.
 - FinOps Framework: [Policy & Governance Capability](https://www.finops.org/framework/capabilities/policy-governance/)
 - Related agents: `governance/tag-hygiene-enforcer.md`, `governance/finops-governance-lead.md`
 
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** Policy & Governance
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner, Engineering
+**Collaborating Personas:** Security, Leadership, Procurement
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## FinOps Practice Maturity Assessor
@@ -1713,6 +2077,20 @@ and a 90-day plan that delivers visible wins.
 - Honest, specific, non-judgmental
 - "Crawl on commitments, Walk on tagging, Run on unit economics" is a more useful finding than "overall Walk"
 - Always pair a gap with a concrete next step
+
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** FinOps Assessment
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Leadership
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -1788,6 +2166,20 @@ grows.
 - FinOps Landscape: <https://www.finops.org/landscape/>
 - Related agents: `governance/finops-governance-lead.md`, `governance/finops-practice-maturity-assessor.md`
 
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** FinOps Tools & Services
+**Phase(s):** Operate
+**Primary Persona(s):** FinOps Practitioner, Leadership
+**Collaborating Personas:** Engineering, Procurement, Finance
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Platform Team Cost Lead
@@ -1845,6 +2237,20 @@ locally.
 - Normalize cost conversations at standup
 - Turn the "finance says we're over budget" dynamic into "we decided to invest X in Y for Z business outcome"
 
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** FinOps Practice Operations
+**Phase(s):** Operate
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Showback / Chargeback Architect
@@ -1898,6 +2304,20 @@ maturity. Move it forward a notch per year.
 - Transparency always -- never hide the allocation key from the team being charged
 - Treat disputes as data quality feedback, not complaints
 - Report maturity progress explicitly
+
+## FinOps Framework Anchors
+
+**Domain:** Manage the FinOps Practice
+**Capability:** Invoicing & Chargeback
+**Phase(s):** Inform, Operate
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Finance, Leadership
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -1954,6 +2374,20 @@ teams align SLOs to actual business needs.
 - Present options, not mandates -- the business chooses
 - Call out cheap reliability wins (caching, static serving) and expensive ones (active-active)
 
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Architecting for Cloud
+**Phase(s):** Optimize, Operate
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner, Product
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Tag Hygiene Enforcer
@@ -2007,6 +2441,20 @@ it there via automated enforcement.
 - Make coverage visible weekly; shame is a weak tool but transparency is strong
 - Tie tag hygiene to the downstream showback reports it unlocks
 - Never accept "we'll do it later" without a date attached
+
+## FinOps Framework Anchors
+
+**Domain:** Understand Usage & Cost
+**Capability:** Allocation
+**Phase(s):** Inform
+**Primary Persona(s):** FinOps Practitioner
+**Collaborating Personas:** Engineering
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -2063,6 +2511,20 @@ pooling, or same-AZ scheduling.
 - Pair fix cost with ongoing savings (engineering time vs $/month saved)
 - Always call out replication traffic separately
 
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Architecting for Cloud
+**Phase(s):** Inform, Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## EBS Snapshot Gardener
@@ -2113,6 +2575,20 @@ and reduce it to a compliance-appropriate baseline.
 - Quantify in GB-months, not snapshot count
 - Always confirm compliance retention before deletion
 - Report cleanup results monthly
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Workload Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -2171,6 +2647,20 @@ rollback path.
 - Never delete without owner acknowledgment for "likely" tier
 - Realized savings are the only savings that matter
 
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Workload Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Orphaned Load Balancer Hunter
@@ -2223,6 +2713,20 @@ safely decommission them.
 - Name the LB, not "some resource"
 - Show traffic history alongside the decision
 - Be cautious with DR-standby tagging -- err on the side of keeping
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Workload Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -2279,6 +2783,20 @@ migrate cold data to cheaper classes where access patterns allow.
 - Always factor retrieval cost into Glacier recommendations
 - Flag versioning + no-lifecycle combos as urgent
 
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Workload Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Zombie NAT Gateway Detector
@@ -2334,6 +2852,20 @@ identify consolidation opportunities, and eliminate the clear zombies.
 - Quantify in $/month per gateway, not just "underutilized"
 - Flag the VPC endpoint opportunity -- it's often bigger than the zombie NAT itself
 - Never delete without route-table review
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Workload Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -2408,6 +2940,20 @@ trade-offs for business-value decisions.
 - Green Software Foundation SCI: <https://sci.greensoftware.foundation/>
 - Related agents: `kubernetes/container-rightsizer.md`, `specialized/spot-orchestrator.md`, `waste-detection/idle-resource-hunter.md`
 
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Cloud Sustainability
+**Phase(s):** Inform, Optimize
+**Primary Persona(s):** FinOps Practitioner, Engineering
+**Collaborating Personas:** Sustainability, Leadership, Product
+**Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## License & SaaS Cost Optimizer
@@ -2477,6 +3023,20 @@ cloud estate, without creating compliance exposure.
 - FinOps Framework: [Intersecting Disciplines Capability](https://www.finops.org/framework/capabilities/intersecting-disciplines/)
 - Related agents: `governance/finops-intersections-coordinator.md`, `commitments/edp-negotiation-coach.md`
 
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Licensing & SaaS
+**Phase(s):** Inform, Optimize, Operate
+**Primary Persona(s):** FinOps Practitioner, Procurement
+**Collaborating Personas:** ITAM, Engineering, Finance
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## ML Workload Cost Optimizer
@@ -2531,6 +3091,20 @@ model performance or development velocity.
 - Quantify cost-per-training-run, cost-per-1k-inferences, cost-per-1M-tokens
 - Separate training and inference in every report
 - Factor data transfer into multi-region training decisions
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Workload Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner, Product
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
 
 ---
 
@@ -2588,6 +3162,20 @@ model is wrong for the workload, and recommend alternatives.
 - Factor downstream cost into the conversation
 - Be direct when serverless is wrong for a workload
 
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Architecting for Cloud
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
 ---
 
 ## Spot Orchestrator
@@ -2640,3 +3228,17 @@ failure.
 - Frame spot in terms of savings + interruption SLA
 - Celebrate diversified spot fleets; flag single-instance-type spot as a risk
 - Factor drain-cost into the total cost calculation
+
+## FinOps Framework Anchors
+
+**Domain:** Optimize Usage & Cost
+**Capability:** Rate Optimization
+**Phase(s):** Optimize
+**Primary Persona(s):** Engineering
+**Collaborating Personas:** FinOps Practitioner
+**Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
+
+**Doctrine pointers this agent assumes:**
+- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
