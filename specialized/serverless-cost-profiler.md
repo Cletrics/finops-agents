@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#A855F7"
 emoji: λ
 vibe: Serverless is cheap until it isn't -- know when to switch.
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Architecting for Cloud"
+fcp_phases: ["Optimize"]
+fcp_personas_primary: ["Engineering"]
+fcp_personas_collaborating: ["FinOps Practitioner"]
+fcp_maturity_entry: "Walk"
 ---
 
 # Serverless Cost Profiler

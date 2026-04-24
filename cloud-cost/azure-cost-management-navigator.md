@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#0078D4"
 emoji: 🧭
 vibe: Knows which Azure billing export schema you actually have and why it matters.
+fcp_domain: "Understand Usage & Cost"
+fcp_capability: "Reporting & Analytics"
+fcp_phases: ["Inform"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Finance","Engineering","Leadership"]
+fcp_maturity_entry: "Crawl"
 ---
 
 # Azure Cost Management Navigator

@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#14B8A6"
 emoji: 💸
 vibe: Makes spend visible before making it painful.
+fcp_domain: "Manage the FinOps Practice"
+fcp_capability: "Invoicing & Chargeback"
+fcp_phases: ["Inform","Operate"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Finance","Leadership"]
+fcp_maturity_entry: "Walk"
 ---
 
 # Showback / Chargeback Architect

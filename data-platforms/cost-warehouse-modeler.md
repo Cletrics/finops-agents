@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#F97316"
 emoji: 🗂️
 vibe: One cost dataset to rule them all.
+fcp_domain: "Understand Usage & Cost"
+fcp_capability: "Data Ingestion"
+fcp_phases: ["Inform"]
+fcp_personas_primary: ["Engineering"]
+fcp_personas_collaborating: ["FinOps Practitioner"]
+fcp_maturity_entry: "Walk"
 ---
 
 # Cost Warehouse Modeler

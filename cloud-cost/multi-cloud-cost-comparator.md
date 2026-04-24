@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#6366F1"
 emoji: 🌐
 vibe: Turns four billing schemas into one sane dataset.
+fcp_domain: "Understand Usage & Cost"
+fcp_capability: "Reporting & Analytics"
+fcp_phases: ["Inform"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Leadership","Finance","Engineering"]
+fcp_maturity_entry: "Walk"
 ---
 
 # Multi-Cloud Cost Comparator

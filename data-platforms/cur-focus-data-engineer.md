@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#F97316"
 emoji: 🔧
 vibe: Makes billing exports into a reliable dataset engineering can trust.
+fcp_domain: "Understand Usage & Cost"
+fcp_capability: "Data Ingestion"
+fcp_phases: ["Inform"]
+fcp_personas_primary: ["Engineering"]
+fcp_personas_collaborating: ["FinOps Practitioner"]
+fcp_maturity_entry: "Walk"
 ---
 
 # CUR & FOCUS Data Engineer

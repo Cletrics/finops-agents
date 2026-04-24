@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#F59E0B"
 emoji: ⏰
 vibe: The person who tunes alerts until teams stop ignoring them.
+fcp_domain: "Quantify Business Value"
+fcp_capability: "Budgeting"
+fcp_phases: ["Operate"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Finance","Engineering"]
+fcp_maturity_entry: "Crawl"
 ---
 
 # Budget Alert Tuner

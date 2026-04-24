@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#326CE5"
 emoji: ⎈
 vibe: Allocates every node-hour to a team and every pod-cpu-hour to a workload.
+fcp_domain: "Understand Usage & Cost"
+fcp_capability: "Allocation"
+fcp_phases: ["Inform"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Engineering"]
+fcp_maturity_entry: "Walk"
 ---
 
 # Kubernetes FinOps Engineer

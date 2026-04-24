@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#E11D48"
 emoji: ⚖️
 vibe: More nines cost more money -- and sometimes the user doesn't care.
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Architecting for Cloud"
+fcp_phases: ["Optimize","Operate"]
+fcp_personas_primary: ["Engineering"]
+fcp_personas_collaborating: ["FinOps Practitioner","Product"]
+fcp_maturity_entry: "Walk"
 ---
 
 # SRE SLO/Cost Tradeoff Analyst

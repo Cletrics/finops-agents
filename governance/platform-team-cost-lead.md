@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#14B8A6"
 emoji: 🧱
 vibe: The engineer whose PR review question is "and what does this cost?"
+fcp_domain: "Manage the FinOps Practice"
+fcp_capability: "FinOps Practice Operations"
+fcp_phases: ["Operate"]
+fcp_personas_primary: ["Engineering"]
+fcp_personas_collaborating: ["FinOps Practitioner"]
+fcp_maturity_entry: "Walk"
 ---
 
 # Platform Team Cost Lead

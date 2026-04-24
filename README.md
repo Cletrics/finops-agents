@@ -9,6 +9,13 @@ GPTs, Claude Projects, and Gemini Gems on the web.
 Built by [Cletrics](https://realtimecost.com) and the FinOps community.
 MIT-licensed. Vendor-neutral where possible. Contributions welcome.
 
+**Framework-aligned.** Every agent carries explicit
+[FinOps Framework](https://www.finops.org/framework/) metadata
+(Domain, Capability, Phase, Personas, Maturity entry point). Current
+coverage: **13 of 22** canonical FCP Framework Capabilities. See
+[`fcp-coverage.md`](./fcp-coverage.md) for the live matrix and roadmap
+gaps, or run `./scripts/fcp-coverage.sh`.
+
 ---
 
 ## Why this exists
@@ -59,7 +66,7 @@ directory. No network calls, no sudo, no elevated privileges.
 
 ---
 
-## Agent roster (32 agents, 7 categories)
+## Agent roster (34 agents, 7 categories)
 
 ### `cloud-cost/` -- 7 agents
 Day-to-day cloud cost analysis across AWS, GCP, and Azure.
@@ -125,16 +132,22 @@ Higher-leverage niches.
 
 ---
 
-## Playbooks (6 named patterns)
+## Playbooks (9 named patterns)
 
 Named-pattern writeups for specific failure modes. Cite them by name.
 
+**Cloud resource waste:**
 - [Zombie NAT Gateway](./playbooks/zombie-nat-gateway.md)
 - [Snapshot Sprawl](./playbooks/snapshot-sprawl.md)
 - [Cross-AZ Chatterbox](./playbooks/cross-az-chatterbox.md)
 - [Idle Load Balancer](./playbooks/idle-load-balancer.md)
 - [Oversized RDS](./playbooks/oversized-rds.md)
+
+**Reporting / allocation / governance patterns (FCP-anchored):**
 - [Untagged Spend Drift](./playbooks/untagged-spend-drift.md)
+- [Month-Length Illusion](./playbooks/month-length-illusion.md) -- the February "win" that isn't
+- [Masked Anomaly](./playbooks/masked-anomaly.md) -- real cost blown in by a coincident commitment offset
+- [Chargeback Revolt](./playbooks/chargeback-revolt.md) -- skipping showback costs 12+ months of credibility
 
 ---
 

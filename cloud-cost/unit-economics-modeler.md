@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#8B5CF6"
 emoji: 📐
 vibe: Makes "cost per customer" a number engineering can move, not a CFO mystery.
+fcp_domain: "Quantify Business Value"
+fcp_capability: "Unit Economics"
+fcp_phases: ["Inform","Optimize"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Product","Finance","Engineering"]
+fcp_maturity_entry: "Walk"
 ---
 
 # Unit Economics Modeler

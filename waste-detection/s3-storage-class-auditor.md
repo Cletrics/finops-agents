@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#DC2626"
 emoji: 🗄️
 vibe: Cold data in Standard storage is money lit on fire.
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Workload Optimization"
+fcp_phases: ["Optimize"]
+fcp_personas_primary: ["Engineering"]
+fcp_personas_collaborating: ["FinOps Practitioner"]
+fcp_maturity_entry: "Crawl"
 ---
 
 # S3 Storage Class Auditor

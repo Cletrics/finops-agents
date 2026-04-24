@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#E11D48"
 emoji: 🚨
 vibe: Tells you when the number changed and also why -- not just that it changed.
+fcp_domain: "Understand Usage & Cost"
+fcp_capability: "Anomaly Management"
+fcp_phases: ["Inform","Operate"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Engineering","Finance"]
+fcp_maturity_entry: "Crawl"
 ---
 
 # Cost Anomaly Detector

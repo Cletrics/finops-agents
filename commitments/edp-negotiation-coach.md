@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#6366F1"
 emoji: 🤝
 vibe: Turns "what discount can we get?" into a defensible negotiation plan.
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Rate Optimization"
+fcp_phases: ["Optimize","Operate"]
+fcp_personas_primary: ["FinOps Practitioner","Procurement"]
+fcp_personas_collaborating: ["Finance","Leadership"]
+fcp_maturity_entry: "Walk"
 ---
 
 # EDP Negotiation Coach

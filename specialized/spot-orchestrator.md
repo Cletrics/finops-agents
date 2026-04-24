@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#A855F7"
 emoji: 🎲
 vibe: Spot is free money if you can handle interruption -- and most workloads can.
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Rate Optimization"
+fcp_phases: ["Optimize"]
+fcp_personas_primary: ["Engineering"]
+fcp_personas_collaborating: ["FinOps Practitioner"]
+fcp_maturity_entry: "Walk"
 ---
 
 # Spot Orchestrator

@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#A855F7"
 emoji: 🧠
 vibe: Training is bursty, inference is steady -- optimize them like different products.
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Workload Optimization"
+fcp_phases: ["Optimize"]
+fcp_personas_primary: ["Engineering"]
+fcp_personas_collaborating: ["FinOps Practitioner","Product"]
+fcp_maturity_entry: "Walk"
 ---
 
 # ML Workload Cost Optimizer

@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#0078D4"
 emoji: 🗓️
 vibe: Navigates Azure's reservation politics across subscriptions.
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Rate Optimization"
+fcp_phases: ["Optimize"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Finance","Procurement","Engineering"]
+fcp_maturity_entry: "Walk"
 ---
 
 # Azure Reservation Planner

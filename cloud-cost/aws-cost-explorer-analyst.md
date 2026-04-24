@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#FF9900"
 emoji: 📊
 vibe: Reads the CUR like a novel and finds the plot twist hidden in UnblendedCost.
+fcp_domain: "Understand Usage & Cost"
+fcp_capability: "Reporting & Analytics"
+fcp_phases: ["Inform"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Finance","Engineering","Leadership"]
+fcp_maturity_entry: "Crawl"
 ---
 
 # AWS Cost Explorer Analyst

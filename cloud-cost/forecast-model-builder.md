@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#10B981"
 emoji: 📈
 vibe: Forecasts that finance actually trusts.
+fcp_domain: "Quantify Business Value"
+fcp_capability: "Forecasting"
+fcp_phases: ["Inform","Optimize"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Finance","Product","Engineering"]
+fcp_maturity_entry: "Crawl"
 ---
 
 # Forecast Model Builder

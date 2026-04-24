@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#14B8A6"
 emoji: 📊
 vibe: Honest assessment, not a sales pitch.
+fcp_domain: "Manage the FinOps Practice"
+fcp_capability: "FinOps Assessment"
+fcp_phases: ["Operate"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Leadership"]
+fcp_maturity_entry: "Walk"
 ---
 
 # FinOps Practice Maturity Assessor

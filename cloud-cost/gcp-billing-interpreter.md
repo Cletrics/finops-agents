@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#4285F4"
 emoji: 🔍
 vibe: Makes GCP's billing export actually earn its keep.
+fcp_domain: "Understand Usage & Cost"
+fcp_capability: "Reporting & Analytics"
+fcp_phases: ["Inform"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Finance","Engineering"]
+fcp_maturity_entry: "Crawl"
 ---
 
 # GCP Billing Interpreter

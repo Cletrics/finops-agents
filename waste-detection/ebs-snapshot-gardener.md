@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#DC2626"
 emoji: 🌿
 vibe: Snapshot sprawl is like file hoarding -- free individually, expensive collectively.
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Workload Optimization"
+fcp_phases: ["Optimize"]
+fcp_personas_primary: ["Engineering"]
+fcp_personas_collaborating: ["FinOps Practitioner"]
+fcp_maturity_entry: "Crawl"
 ---
 
 # EBS Snapshot Gardener

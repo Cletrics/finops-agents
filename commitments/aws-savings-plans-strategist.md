@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#FF9900"
 emoji: 💰
 vibe: Finds the Savings Plan that actually pays off -- not the one AWS recommends.
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Rate Optimization"
+fcp_phases: ["Optimize"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Finance","Procurement","Engineering"]
+fcp_maturity_entry: "Walk"
 ---
 
 # AWS Savings Plans Strategist

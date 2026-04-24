@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#14B8A6"
 emoji: 🏷️
 vibe: Untagged resources are unattributable. Fix the tags first, everything else follows.
+fcp_domain: "Understand Usage & Cost"
+fcp_capability: "Allocation"
+fcp_phases: ["Inform"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Engineering"]
+fcp_maturity_entry: "Crawl"
 ---
 
 # Tag Hygiene Enforcer

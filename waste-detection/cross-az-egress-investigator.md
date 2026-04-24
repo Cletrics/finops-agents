@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#DC2626"
 emoji: 🌉
 vibe: "Cross-AZ" on the bill means "I wish I knew which service."
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Architecting for Cloud"
+fcp_phases: ["Inform","Optimize"]
+fcp_personas_primary: ["Engineering"]
+fcp_personas_collaborating: ["FinOps Practitioner"]
+fcp_maturity_entry: "Walk"
 ---
 
 # Cross-AZ Egress Investigator

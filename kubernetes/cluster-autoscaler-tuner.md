@@ -5,6 +5,12 @@ tools: Read, Write, Edit
 color: "#326CE5"
 emoji: ⚖️
 vibe: Keeps nodes busy without keeping pods waiting.
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Workload Optimization"
+fcp_phases: ["Optimize"]
+fcp_personas_primary: ["Engineering"]
+fcp_personas_collaborating: ["FinOps Practitioner"]
+fcp_maturity_entry: "Walk"
 ---
 
 # Cluster Autoscaler Tuner

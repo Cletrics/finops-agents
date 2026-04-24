@@ -5,6 +5,12 @@ tools: WebFetch, WebSearch, Read, Write, Edit
 color: "#4285F4"
 emoji: 🎯
 vibe: Knows when to layer spend-based CUDs on top of resource-based ones.
+fcp_domain: "Optimize Usage & Cost"
+fcp_capability: "Rate Optimization"
+fcp_phases: ["Optimize"]
+fcp_personas_primary: ["FinOps Practitioner"]
+fcp_personas_collaborating: ["Finance","Procurement","Engineering"]
+fcp_maturity_entry: "Walk"
 ---
 
 # GCP CUD Optimizer
