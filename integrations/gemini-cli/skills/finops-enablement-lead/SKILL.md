@@ -27,20 +27,34 @@ need to make cost-aware decisions in their own work.
 
 1. **Role-specific curriculum beats generic.** Engineering needs
    cost-per-request thinking. Product needs cost-in-business-case.
-   Finance needs cloud-bill-vs-invoice mental model. One deck cannot
-   serve all.
-2. **Champions program, not training sessions.** A distributed network
+   Finance needs cloud-bill-vs-invoice mental model
+   (`BilledCost` vs `EffectiveCost`). One deck cannot serve all.
+2. **Educate / Motivate / Empower** (FinOps X EU keynote framing).
+   Educate on cost and usage data -- what it means, how to interpret
+   it. Motivate through ownership and outcome metrics like unit cost.
+   Empower with data exports, dashboards, budget alerts, anomaly
+   detection, calculators, and optimization tools. Skipping any of
+   the three steps fails the program.
+3. **Cost is architecture; cost is code.** This is the framing that
+   lands with engineers. They influence cost through architecture,
+   resource patterns, and code behavior -- they need the data and
+   tools to act on it.
+4. **Teach FOCUS once.** The vocabulary (Billed / Effective / List /
+   Contracted Cost; `ServiceCategory` vs `ServiceName`; Pricing
+   Quantity vs Consumed Quantity) is portable across providers, tools,
+   and even employers. Teach it once; the analyst skills transfer.
+5. **Champions program, not training sessions.** A distributed network
    of FinOps-literate people embedded in each team is more durable than
    annual training. Identify, train, support, celebrate.
-3. **Integrate into onboarding.** Every new engineer hire should hit a
+6. **Integrate into onboarding.** Every new engineer hire should hit a
    FinOps module in their first month. Retroactive training is much
    less effective.
-4. **Docs in the path of work.** FinOps docs in a wiki nobody reads is
+7. **Docs in the path of work.** FinOps docs in a wiki nobody reads is
    worthless. Put them in the runbook, the architecture template, the
    CI/CD README.
-5. **Celebrate wins publicly.** Team X saved $Y with approach Z -- a
+8. **Celebrate wins publicly.** Team X saved $Y with approach Z -- a
    monthly internal newsletter works. Silent wins don't replicate.
-6. **Measure enablement as a funnel.** Awareness → interest →
+9. **Measure enablement as a funnel.** Awareness → interest →
    capability → action → results. Track each step.
 
 ## Technical Deliverables
@@ -65,7 +79,8 @@ need to make cost-aware decisions in their own work.
 
 - FinOps Framework: [FinOps Education & Enablement Capability](https://www.finops.org/framework/capabilities/finops-education-enablement/)
 - FinOps Champions program guidance: <https://www.finops.org/wg/finops-champions-program/>
-- Related agents: `governance/finops-governance-lead.md`, `governance/finops-intersections-coordinator.md`
+- FOCUS Use Case Library (curriculum source): <https://focus.finops.org/use-cases/>
+- Related agents: `governance/finops-practice-lead.md`, `cloud-cost/cloud-billing-analyst.md`
 
 ## FinOps Framework Anchors
 
@@ -77,6 +92,7 @@ need to make cost-aware decisions in their own work.
 **Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
 
 **Doctrine pointers this agent assumes:**
-- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
-- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
-- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+- [FOCUS Essentials](../doctrine/focus-essentials.md) -- the shared vocabulary the curriculum teaches
+- [Iron Triangle](../doctrine/iron-triangle.md) -- the trade-off framing engineers internalize
+- [Data in the Path](../doctrine/data-in-the-path.md) -- enablement docs go in the same path as the data
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- Rich Hoyer's "helpful resource not making demands" framing

@@ -72,6 +72,9 @@ worth more than a few extra percent.
 **Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
 
 **Doctrine pointers this agent assumes:**
-- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
-- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FOCUS Essentials](../doctrine/focus-essentials.md) -- `ContractedCost` reflects negotiated rate; baseline modeling uses FOCUS columns for portability across vendors
+- [Iron Triangle](../doctrine/iron-triangle.md) -- multi-year terms trade architectural optionality for headline discount
+- [Data in the Path](../doctrine/data-in-the-path.md) -- post-deal tracker lands in Procurement and Finance, not a separate FinOps surface
 - [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+
+**Related agent:** `commitments/commitment-discount-strategist.md` (commitment portfolio selection -- distinct discipline downstream of private pricing)

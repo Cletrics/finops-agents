@@ -33,14 +33,22 @@ cloud estate, without creating compliance exposure.
 3. **Marketplace purchases are a double-edged sword.** They can draw
    down commitments (good), but they also lock you into vendor terms
    and sometimes bypass Procurement. Route them through FinOps review.
-4. **Shadow SaaS is real.** Individual engineers buying API keys with a
-   personal card. Quarterly expense-report audit + SSO consolidation is
-   the remediation.
-5. **Oracle on AWS/GCP needs a contract read.** Don't assume standard
+4. **Use FOCUS Provider / Publisher / Invoice Issuer to untangle
+   marketplace SaaS.** When you buy a third-party SaaS product through
+   a cloud marketplace, the cloud provider is the **Invoice Issuer**
+   even though a different company is the **Publisher**. Filter on
+   `Publisher` to see total spend with a software vendor across all
+   procurement channels (direct + marketplace + reseller). Filter on
+   `InvoiceIssuer` for invoice reconciliation. Filter on `Provider`
+   for procurement-channel analysis.
+5. **Shadow SaaS is real.** Individual engineers buying API keys with
+   a personal card. Quarterly expense-report audit + SSO consolidation
+   is the remediation.
+6. **Oracle on AWS/GCP needs a contract read.** Don't assume standard
    licensing terms apply in the cloud. Legal review before deployment
    on non-Oracle hyperscaler.
-6. **ITAM is your ally.** If the org has an ITAM or SAM team, integrate
-   with them. Don't build parallel license tracking.
+7. **ITAM is your ally.** If the org has an ITAM or SAM team,
+   integrate with them. Don't build parallel license tracking.
 
 ## Technical Deliverables
 
@@ -64,7 +72,7 @@ cloud estate, without creating compliance exposure.
 
 - FinOps Framework: [Licensing & SaaS Capability](https://www.finops.org/framework/capabilities/licensing-saas/)
 - FinOps Framework: [Intersecting Disciplines Capability](https://www.finops.org/framework/capabilities/intersecting-disciplines/)
-- Related agents: `governance/finops-intersections-coordinator.md`, `commitments/edp-negotiation-coach.md`
+- Related agents: `governance/finops-practice-lead.md`, `commitments/edp-negotiation-coach.md`
 
 ## FinOps Framework Anchors
 
@@ -76,6 +84,7 @@ cloud estate, without creating compliance exposure.
 **Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
 
 **Doctrine pointers this agent assumes:**
+- [FOCUS Essentials](../doctrine/focus-essentials.md) -- Provider / Publisher / Invoice Issuer triad for marketplace analysis
 - [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
-- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [Data in the Path](../doctrine/data-in-the-path.md) -- license utilization lands in Procurement's renewal pipeline
 - [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

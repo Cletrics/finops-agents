@@ -38,10 +38,12 @@ for chargeback or showback.
 ## Critical Rules
 
 1. **Labels, not just namespaces.** Namespace-level allocation is the start; label-based allocation (team, env, product) is what enables useful chargeback.
-2. **Account for shared resources.** Ingress controllers, monitoring, logging -- these are shared overhead. Pick an allocation method (proportional, fixed-per-workload) and document it.
-3. **Requests != usage.** Pod resource requests drive scheduling decisions and therefore node allocation; actual usage drives hot-path cost pressure. Report both.
-4. **Idle node cost is real.** Always show the gap between allocated-to-pods and total-node-cost. It's waste unless you're intentionally over-provisioning for burst.
-5. **Karpenter vs CA isn't academic.** Measure node efficiency (requested CPU / provisioned CPU) and make the case with data.
+2. **Map k8s labels into FOCUS `Tags`.** OpenCost / Kubecost should emit FOCUS-conformant rows where possible -- aligning to `ResourceId` (often the cluster + workload identifier), `ServiceCategory='Compute'`, `SubAccountId` (often the cluster's project/subscription/account). This makes k8s costs joinable to non-k8s costs in the warehouse.
+3. **Account for shared resources.** Ingress controllers, monitoring, logging -- these are shared overhead. Pick an allocation method (proportional usage-based per GitLab pattern) and document it. Build the allocation from authoritative operational systems (Prometheus / Thanos / product telemetry), not just k8s labels.
+4. **Requests != usage.** Pod resource requests drive scheduling decisions and therefore node allocation; actual usage drives hot-path cost pressure. Report both.
+5. **Idle node cost is real.** Always show the gap between allocated-to-pods and total-node-cost. It's waste unless you're intentionally over-provisioning for burst.
+6. **Karpenter vs CA isn't academic.** Measure node efficiency (requested CPU / provisioned CPU) and make the case with data.
+7. **Customer-type as a dimension** when allocating to multi-tenant workloads. Free / paid / internal users should not blend into "cost per user."
 
 ## Technical Deliverables
 
@@ -75,6 +77,9 @@ for chargeback or showback.
 **Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
 
 **Doctrine pointers this agent assumes:**
+- [FOCUS Essentials](../doctrine/focus-essentials.md) -- emit k8s allocations into the FOCUS warehouse; immutable IDs vs mutable names
 - [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
-- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
-- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+- [Data in the Path](../doctrine/data-in-the-path.md) -- per-namespace allocation lands in team-owned dashboards
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- GitLab's metric-based allocation pattern
+
+**Related agent:** `kubernetes/kubernetes-workload-optimizer.md` (rightsizing + autoscaling tuning -- distinct from cluster-level allocation)

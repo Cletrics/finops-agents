@@ -28,6 +28,15 @@ AGENT_DIRS=(cloud-cost commitments kubernetes data-platforms governance waste-de
 # Collect covered capabilities: "Domain||Capability" -> list of agents
 declare -A COVERAGE
 
+# Map a capability string to its canonical Domain (for secondary-capability lookup)
+declare -A CAP_TO_DOMAIN
+for d in "Understand Usage & Cost" "Quantify Business Value" "Optimize Usage & Cost" "Manage the FinOps Practice"; do
+  IFS='|' read -ra caps <<< "${CANONICAL[$d]}"
+  for c in "${caps[@]}"; do
+    CAP_TO_DOMAIN["$c"]="$d"
+  done
+done
+
 for dir in "${AGENT_DIRS[@]}"; do
   [[ -d "$dir" ]] || continue
   while IFS= read -r f; do
@@ -36,11 +45,35 @@ for dir in "${AGENT_DIRS[@]}"; do
     capability=$(awk -F'"' '/^fcp_capability:/ {print $2; exit}' "$f")
     name=$(awk -F'"' '/^name:/ && !/^fcp_/ {sub(/^name: /,""); print; exit}' "$f" | sed 's/^"//;s/"$//')
     [[ -z "$domain" || -z "$capability" ]] && continue
+
+    # Primary capability
     key="${domain}||${capability}"
     if [[ -n "${COVERAGE[$key]:-}" ]]; then
       COVERAGE[$key]="${COVERAGE[$key]}; ${name}"
     else
       COVERAGE[$key]="${name}"
+    fi
+
+    # Secondary capabilities (optional YAML list, e.g. ["Anomaly Management","Policy & Governance"])
+    secondary_line=$(awk '/^fcp_capabilities_secondary:/ {sub(/^fcp_capabilities_secondary: */,""); print; exit}' "$f")
+    if [[ -n "$secondary_line" ]]; then
+      # Strip [ and ], split on ","
+      secondary_clean="${secondary_line#[}"
+      secondary_clean="${secondary_clean%]}"
+      IFS=',' read -ra sec_caps <<< "$secondary_clean"
+      for sc in "${sec_caps[@]}"; do
+        # Strip surrounding whitespace and quotes
+        sc_clean="$(echo "$sc" | sed 's/^[ \t]*"\?//; s/"\?[ \t]*$//')"
+        [[ -z "$sc_clean" ]] && continue
+        sc_domain="${CAP_TO_DOMAIN[$sc_clean]:-}"
+        [[ -z "$sc_domain" ]] && continue
+        sc_key="${sc_domain}||${sc_clean}"
+        if [[ -n "${COVERAGE[$sc_key]:-}" ]]; then
+          COVERAGE[$sc_key]="${COVERAGE[$sc_key]}; ${name} (secondary)"
+        else
+          COVERAGE[$sc_key]="${name} (secondary)"
+        fi
+      done
     fi
   done < <(find "$dir" -name "*.md" -type f)
 done

@@ -54,6 +54,16 @@ estate with full cost transparency from day zero.
 6. **Iron Triangle in migrations.** Faster migrations cost more and
    have more re-work. Better migrations are slower and need budget
    defended against pressure for "just get it live."
+7. **Plan the "double bubble"** (UnitedHealth Group lesson). The
+   temporary overlap when paying for both source and target during
+   migration is real and material. Budget for it explicitly; close
+   the dual-cost window deliberately. Network cost models differ
+   radically between data center (pipe/capacity) and cloud
+   (usage/transfer) -- migration estimates are usually wrong; treat
+   them as directional and monitor actuals from day one.
+8. **Land FOCUS exports during migration**, not after. The migration
+   window is when you can stand up FOCUS for the new environment
+   without legacy reporting in the way. See the parallel-run playbook.
 
 ## Technical Deliverables
 
@@ -75,7 +85,8 @@ estate with full cost transparency from day zero.
 ## References
 
 - FinOps Framework: [Onboarding Workloads Capability](https://www.finops.org/framework/capabilities/onboarding-workloads/)
-- Related agents: `cloud-cost/cloud-workload-cost-estimator.md`, `cloud-cost/forecast-model-builder.md`, `governance/tag-hygiene-enforcer.md`
+- Related agents: `cloud-cost/forecast-estimation-analyst.md`, `governance/allocation-policy-architect.md`, `data-platforms/focus-data-engineer.md`
+- Related playbook: [FOCUS Adoption -- Parallel Run](../playbooks/focus-adoption-parallel-run.md)
 
 ## FinOps Framework Anchors
 
@@ -87,6 +98,7 @@ estate with full cost transparency from day zero.
 **Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
 
 **Doctrine pointers this agent assumes:**
+- [FOCUS Essentials](../doctrine/focus-essentials.md) -- the data shape new workloads should land in from day zero
 - [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
-- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [Data in the Path](../doctrine/data-in-the-path.md) -- onboarding gates land cost data in the deployment workflow
 - [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

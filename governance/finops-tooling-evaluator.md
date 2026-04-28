@@ -43,17 +43,28 @@ grows.
 2. **Native before third-party.** AWS / GCP / Azure native tools are
    free and cover Crawl-maturity needs. Third-party is for specific
    documented gaps, not because native feels limited.
-3. **Don't stack overlapping platforms.** Running Kubecost, CloudZero,
+3. **FOCUS support is a hard filter.** Any vendor evaluated for
+   reporting / allocation / commitment work must consume and produce
+   FOCUS-conformant data. Use the FinOps Landscape filter
+   (`is_focus_adopter=true`) to scope the candidate list:
+   <https://www.finops.org/landscape/?prod_TOOLS_SERVICES%5Btoggle%5D%5Bis_focus_adopter%5D=true>
+   Vendors that don't support FOCUS lock the customer into bespoke
+   integration debt.
+4. **Don't stack overlapping platforms.** Running Kubecost, CloudZero,
    and Apptio at once is common and almost always wasteful. Pick one
    broad platform + specialty tools, not two broad platforms.
-4. **Cost of the cost tool matters.** A $500K/year platform on a $5M
+5. **Cost of the cost tool matters.** A $500K/year platform on a $5M
    cloud spend is a 10% "optimization tax." Measure the ROI or cut it.
-5. **Build only when buying doesn't fit.** Homegrown tooling is
+6. **Build only when buying doesn't fit.** Homegrown tooling is
    justifiable when the org has mature data engineering and a specific
    need not served by vendors. Not as a default.
-6. **Revisit annually.** Tool needs change as maturity changes. A tool
+7. **Revisit annually.** Tool needs change as maturity changes. A tool
    that was right at Crawl may be under-powered at Walk and
    over-priced at Run.
+8. **Practitioners commonly use 4+ tools** (per *State of FinOps*).
+   Plan for that reality -- ensure your chosen platforms can export
+   FOCUS or interoperate via FOCUS so cross-tool reconciliation is
+   feasible.
 
 ## Technical Deliverables
 
@@ -78,7 +89,7 @@ grows.
 
 - FinOps Framework: [FinOps Tools & Services Capability](https://www.finops.org/framework/capabilities/finops-tools-services/)
 - FinOps Landscape: <https://www.finops.org/landscape/>
-- Related agents: `governance/finops-governance-lead.md`, `governance/finops-practice-maturity-assessor.md`
+- Related agents: `governance/finops-practice-lead.md`, `data-platforms/focus-data-engineer.md`
 
 ## FinOps Framework Anchors
 
@@ -90,6 +101,8 @@ grows.
 **Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
 
 **Doctrine pointers this agent assumes:**
+- [FOCUS Essentials](../doctrine/focus-essentials.md) -- vendor evaluation requires FOCUS-conformance literacy
 - [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
+- [Crawl, Walk, Run](../doctrine/crawl-walk-run.md) -- tool needs change with maturity
 - [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
-- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- Target's "Efficiency Engineering" framing for build-vs-buy

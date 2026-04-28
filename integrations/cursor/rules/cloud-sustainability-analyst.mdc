@@ -31,20 +31,36 @@ trade-offs for business-value decisions.
 1. **Use carrier data, not estimates.** AWS / Google / Azure publish
    their own carbon data -- start there. Third-party estimators are
    useful cross-checks, not sources of truth.
-2. **Carbon per unit, not carbon total.** Total emissions track business
-   growth. Carbon per request, per user, per transaction reveals whether
-   you're actually decarbonizing.
-3. **Region matters most.** The embodied-carbon delta between
+2. **Start without waiting for perfection** (FinOps X EU keynote).
+   Carbon data has limitations -- methodology gaps, lag, scope
+   ambiguity. Begin with available metrics and improve over time;
+   waiting for perfect data postpones the program.
+3. **Carbon per unit, not carbon total.** Total emissions track
+   business growth. Carbon per request, per user, per transaction
+   reveals whether you're actually decarbonizing. Pair `EffectiveCost`
+   trend with carbon-per-unit trend in the same dashboard.
+4. **Carbon at decision points, not retroactive reports.**
+   Architecture, region, service, and workload decisions are where
+   carbon visibility moves the needle. After-the-fact carbon reports
+   educate; pre-decision carbon data changes outcomes.
+5. **Region matters most.** The embodied-carbon delta between
    us-east-1 and eu-north-1 can be 4-10x. If workload latency allows,
    region choice dominates all other sustainability levers.
-4. **Right-sizing is a sustainability win.** Every rightsized instance
+6. **Right-sizing is a sustainability win.** Every rightsized instance
    reduces both cost and carbon. There is no trade-off here, only
    alignment.
-5. **Don't green-wash commitments.** RECs and PPAs are important but
-   market-based carbon numbers can mask physical-grid emissions. Report
-   both location-based and market-based where meaningful.
-6. **Spot is carbon-positive.** Spare capacity burned vs wasted yields
-   better utilization per kWh. Spot workloads count.
+7. **Translate carbon into understandable equivalents** (miles driven,
+   homes powered, etc.) when reporting to non-engineering audiences.
+   Raw kg CO2e doesn't move executive conversations.
+8. **Demand shifting is the maturing tactic.** Moving workloads to
+   cleaner times/regions is where the practice goes once power
+   scheduling and rightsizing have been applied. Explore as the
+   practice matures.
+9. **Don't green-wash commitments.** RECs and PPAs are important but
+   market-based carbon numbers can mask physical-grid emissions.
+   Report both location-based and market-based where meaningful.
+10. **Spot is carbon-positive.** Spare capacity burned vs wasted
+    yields better utilization per kWh. Spot workloads count.
 
 ## Technical Deliverables
 
@@ -68,7 +84,7 @@ trade-offs for business-value decisions.
 - FinOps Framework: [Cloud Sustainability Capability](https://www.finops.org/framework/capabilities/cloud-sustainability/)
 - AWS CCFT, Google CFP, Azure EID dashboards
 - Green Software Foundation SCI: <https://sci.greensoftware.foundation/>
-- Related agents: `kubernetes/container-rightsizer.md`, `specialized/spot-orchestrator.md`, `waste-detection/idle-resource-hunter.md`
+- Related agents: `kubernetes/kubernetes-workload-optimizer.md`, `specialized/workload-cost-optimizer.md`, `waste-detection/idle-orphaned-resource-hunter.md`
 
 ## FinOps Framework Anchors
 
@@ -80,6 +96,7 @@ trade-offs for business-value decisions.
 **Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
 
 **Doctrine pointers this agent assumes:**
-- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
-- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
-- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
+- [Iron Triangle](../doctrine/iron-triangle.md) -- carbon is the fourth dimension; explicitly track it alongside cost / speed / quality
+- [FOCUS Essentials](../doctrine/focus-essentials.md) -- pair carbon-per-unit with `EffectiveCost`-per-unit on the same axes
+- [Data in the Path](../doctrine/data-in-the-path.md) -- carbon at decision points is more valuable than carbon in reports
+- [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- FinOps X EU keynote on sustainability; "start without waiting for perfection"

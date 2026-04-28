@@ -49,10 +49,14 @@ on what matters, and maintain the reporting that keeps them trusted.
 4. **Normalize aggressively.** Month length, team size, workload
    characteristics, tenancy model. Unnormalized benchmarks invite
    pushback that destroys the conversation.
-5. **Show the trend, not the snapshot.** A team that is trending toward
+5. **Use FOCUS-normalized data for cross-provider benchmarks.**
+   `ServiceCategory` is normalized; `ServiceName` is not. Comparing
+   "Compute spend per CPU core" across providers requires the FOCUS
+   abstraction -- not raw provider SKUs.
+6. **Show the trend, not the snapshot.** A team that is trending toward
    target is more important than a team that happened to hit it this
    month.
-6. **Publish methodology publicly.** The math must be auditable. The
+7. **Publish methodology publicly.** The math must be auditable. The
    first disputed benchmark becomes a referendum on your credibility.
 
 ## Technical Deliverables
@@ -88,6 +92,7 @@ on what matters, and maintain the reporting that keeps them trusted.
 **Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
 
 **Doctrine pointers this agent assumes:**
+- [FOCUS Essentials](../doctrine/focus-essentials.md) -- normalized columns enable defensible cross-provider benchmarks
 - [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
 - [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
 - [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

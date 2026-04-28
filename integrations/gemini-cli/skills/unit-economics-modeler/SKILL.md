@@ -21,10 +21,12 @@ trend that engineering and finance both believe in.
 ## Critical Rules
 
 1. **Pick one unit, not three.** Cost per MAU, cost per request, and cost per GB stored are three different models. Pick the one that matches how revenue scales.
-2. **Attribution before aggregation.** Every dollar must have a traceable path from CUR line item to unit denominator. If you can't trace it, don't include it.
-3. **Shared infrastructure is allocated, not split equally.** Use a defensible allocation key (tenant request volume, tenant storage, tenant compute hours).
-4. **Show the unit as a trend.** Absolute cloud spend going up is fine if cost-per-unit is flat or down.
-5. **Segment by customer tier.** Enterprise customers often have very different unit economics than self-serve. Blended numbers hide the truth.
+2. **Attribution before aggregation.** Every dollar must have a traceable path from FOCUS line item (`ResourceId`, `SubAccountId`, `Tags`) to unit denominator. If you can't trace it, don't include it.
+3. **Use `EffectiveCost`, not `BilledCost`.** Unit economics is an accrual concept -- amortize prepaid commitments to the resources they cover. `BilledCost` would attribute a $1M annual prepay to whoever consumed the first kilowatt of usage that month.
+4. **Shared infrastructure is allocated, not split equally.** Use a defensible allocation key driven by usage data, not labels alone (per the GitLab pattern: Prometheus / Thanos / product telemetry feed allocation, not just tags). Customer-type as an allocation dimension where free / paid / internal mix.
+5. **Show the unit as a trend.** Absolute cloud spend going up is fine if cost-per-unit is flat or down. Pair `ConsumedQuantity` trend with `EffectiveCost` trend.
+6. **Segment by customer tier.** Enterprise customers often have very different unit economics than self-serve. Blended numbers hide the truth.
+7. **Ship unit economics at GA, not retroactively.** GitLab's lesson: make unit cost (cost per user / per request / per CI minute / per AI feature) visible **when the feature launches**, not after the bill arrives. Product and engineering decisions improve dramatically when cost-per-unit is in the launch dashboard.
 
 ## Technical Deliverables
 
@@ -58,6 +60,7 @@ trend that engineering and finance both believe in.
 **Entry maturity:** Walk (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
 
 **Doctrine pointers this agent assumes:**
+- [FOCUS Essentials](../doctrine/focus-essentials.md) -- `EffectiveCost` for accrual, `Tags` as JSON, `ResourceId` joins
 - [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
-- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [Data in the Path](../doctrine/data-in-the-path.md) -- unit cost lands in the product launch dashboard, not a separate FinOps surface
 - [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline

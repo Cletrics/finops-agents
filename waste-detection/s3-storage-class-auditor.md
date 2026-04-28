@@ -38,6 +38,7 @@ migrate cold data to cheaper classes where access patterns allow.
 3. **Retrieval costs matter.** Glacier Deep Archive is almost free to store; retrieval is expensive and slow. Only use for true cold data.
 4. **Small objects defeat Glacier economics.** Glacier has minimum billable object sizes (128KB). Small-object-heavy buckets should stay in Intelligent-Tiering.
 5. **Versioning multiplies cost.** A bucket with versioning and no lifecycle policy grows without bound.
+6. **Use FOCUS to validate the bill.** `ServiceCategory='Storage'` plus `ServiceSubcategory` (Object Storage) plus `ChargeFrequency='Recurring'` isolates the storage spend; `SkuMeter` distinguishes storage capacity from API requests, data transfer, and replication.
 
 ## Technical Deliverables
 
@@ -71,6 +72,7 @@ migrate cold data to cheaper classes where access patterns allow.
 **Entry maturity:** Crawl (see [../doctrine/crawl-walk-run.md](../doctrine/crawl-walk-run.md))
 
 **Doctrine pointers this agent assumes:**
-- [Iron Triangle](../doctrine/iron-triangle.md) -- cost is never free of trade-offs with speed, quality, and carbon
-- [Data in the Path](../doctrine/data-in-the-path.md) -- outputs must land in the Persona's existing workflow
+- [FOCUS Essentials](../doctrine/focus-essentials.md) -- `ServiceCategory='Storage'`; `SkuMeter` separates storage / requests / transfer
+- [Iron Triangle](../doctrine/iron-triangle.md) -- Glacier trades retrieval latency for storage cost
+- [Data in the Path](../doctrine/data-in-the-path.md) -- per-bucket recommendations land in IaC review for new buckets
 - [FCP Canon Anchors](../doctrine/fcp-anchors.md) -- named sources worth citing inline
